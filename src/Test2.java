@@ -1,12 +1,14 @@
-public class Test2 {
-    public static void main(String[] args) {
-        Test1 t1 = Test1.getInstance();
-        Test1 t2 = Test1.getInstance();
-        String name = t1.name("Saikumar");
-        System.out.println(name);
-        System.out.println(t1.hashCode() + " " + t2.hashCode());
 
-        String name1 = t1.name("Sai");
-        System.out.println(name1);
+interface  demo{
+    void add();
+}
+class Test{
+    public void say(){
+        System.out.println("Hello Saikumar");
+    }
+    public static void main(String[] args) {
+        Test t = new Test();
+        demo i = t ::say;
+        i.add(); // Hello Saikumar
     }
 }
