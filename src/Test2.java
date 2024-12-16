@@ -1,14 +1,9 @@
-
-interface  demo{
-    void add();
-}
-class Test{
-    public void say(){
-        System.out.println("Hello Saikumar");
+class Test2 extends  Test1{
+    Test2(){
+        System.out.println("Saikumar");
     }
     public static void main(String[] args) {
-        Test t = new Test();
-        demo i = t ::say;
-        i.add(); // Hello Saikumar
+        Test2 t2 = new Test2();
+       //  t2.display();
     }
 }
