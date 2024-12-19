@@ -1,6 +1,7 @@
 package Java_8_Features;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.function.Consumer;
 import java.util.stream.Collectors;
@@ -52,5 +53,17 @@ public class Streams {
         System.out.println("Stopped");
 
         elements.stream().forEach((i-> System.out.println("The Square of i is - " +(i*i))));
+
+        System.out.println("print");
+        List<Integer> num = Arrays.asList(4,5,6,2,3,9);
+        List<Integer>num1 = num.stream().map(i->i*2).toList();
+        List<Integer>num2 = num.stream().filter(i->i%2==0).map(j->j*2).toList();
+        Consumer<List<Integer>> ta = i-> System.out.println(i);
+        ta.accept(num1);
+        ta.accept(num);
+        System.out.println("Hello World");
+        ta.accept(num2);
+
+
     }
 }
