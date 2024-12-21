@@ -8,7 +8,7 @@ public class MyThread extends Thread{
     }
 
     public static void main(String[] args) {
-        MyThread t = new MyThread();  // Thread iniaization
+        MyThread_1 t = new MyThread_1();  // Thread iniaization
         t.run(); // starting of the Thread
         for(int i = 1;i<=10;i++){
             System.out.println("Parent Thread");
