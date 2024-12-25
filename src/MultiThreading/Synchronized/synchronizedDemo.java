@@ -13,12 +13,10 @@ package MultiThreading.Synchronized;
 }
 class synchronizedDemo{
     public static void main(String[] args) {
-        display d  = new display();
-        MyThread t1 = new MyThread(d,"Saikumar");
-        MyThread t2 = new MyThread(d,"Santosh");
+        display d = new display();
+        MyThread t1 = new MyThread(d, "Saikumar");
+        MyThread t2 = new MyThread(d, "Santosh");
         t1.start();
         t2.start();
-
-
     }
  }

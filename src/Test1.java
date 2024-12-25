@@ -1,8 +1,7 @@
-class Test1{
-    Test1(){
-        System.out.println("Hello Parent Class");
-    }
-    public void display(){
-        System.out.println("hello");
+class Test{
+    public static void main(String[] args) {
+        for(int i = 1;i<=101;i++){
+            System.out.println("Spring Boot - "+i);
+        }
     }
 }
