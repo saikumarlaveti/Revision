@@ -31,5 +31,23 @@ public class Methods {
 
         //7.ensureCapacity
 
+
+        StringBuffer sb1 = new StringBuffer("Hello");
+        StringBuffer sb2 = new StringBuffer("Hello");
+
+        StringBuffer s1 = new StringBuffer("Sai");
+        StringBuffer s2 = new StringBuffer("Sai");
+        System.out.println(s1 == s2);//false (different references)
+
+        String names = "Saikumar";
+        String namess = "Saikumar";
+        System.out.println(names == namess); //true(same references)
+
+
+        System.out.println(sb1.equals(sb2)); // Output: false (different references)
+        System.out.println(sb1 == sb2);     // Output: false (differen
+
     }
 }
+
+

@@ -7,7 +7,7 @@ public class RunnerDemo {
     public static void main(String[] args) {
         Runtime r = Runtime.getRuntime();
         System.out.println("Total Memory :"+r.totalMemory());
-        System.out.println("Free Memory :"+ System);
+        System.out.println("Free Memory :"+ r.totalMemory());
         for(int i =1;i<=100000;i++){
             Date d = new Date();
             d = null;
