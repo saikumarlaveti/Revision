@@ -19,8 +19,7 @@ public class JoinMethod2 {
         MyThread_1.mt = Thread.currentThread();
         MyThread_1 ct = new MyThread_1();
         ct.start();
-        ct.join();
-
+       // ct.join();  // if i un comment this statement deadlock will happen because myThread class also calls join() method()
         for(int i = 1;i<10;i++){
             System.out.println("Main Thread");
             Thread.sleep(200);

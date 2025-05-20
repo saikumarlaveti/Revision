@@ -4,10 +4,10 @@ import java.util.ArrayList;
 
 public class ArrayListClass {
     public static void main(String[] args) {
-        ArrayList<Integer> number = new ArrayList<>();
+        ArrayList number = new ArrayList<>();
         number.add(1);
-        number.add(2);
-        number.add(3);
+        number.add(1.2);
+        number.add("hello");
         number.add(4);
 
         //add
